@@ -7,16 +7,90 @@
     <title>Dr. House</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+    main {
+        margin-left: 140px; /* Same width as the sidebar + left position in px */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+    
+    .sidenav {
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding: 8px 0;
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+    }
+    .CoolImg{
+        width: 500px;
+    }
+
+    .container-landing{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+</style>
 <body>
     
 
     <audio class="theme" autoplay muted="true">
         <source src="src/House MD  Theme Song.mp3" type="audio/mp3" >
     </audio>
-
-    <h1>Dr. House</h1>
-
     <script src="./index.js"></script>
+
+    <!-- START NAVBAR  -->
+    <nav>
+        Navbar
+    </nav>
+    <!-- END -->
+    
+    <!-- START Event Section (SIDEBAR)-->
+        <div class="sidenav">
+            <a href="#about">Event :</a>
+ 
+        </div>
+    <!-- END -->
+
+    <!-- START MAIN-->
+    <main>
+
+        <div class="container-landing">
+            <div>
+                <p>
+                    Date: 02/12/2022 13:30 CTM -8
+                </p>
+   
+                <img class="CoolImg" src="https://photos.tf1.fr/1200/720/dr-house-vignette_paysage-c0be1b-0@1x.jpg" alt="Cool image of Dr. House">
+                <br>
+            </div>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46275.77156057973!2d6.9744319!3d43.539128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce8191f03733bb%3A0xafb954664bccc079!2sPalacio%20de%20Festivales%20y%20Congresos%20de%20Cannes!5e0!3m2!1ses-419!2sfr!4v1669324930392!5m2!1ses-419!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            
+        </div>
+        <!-- START MEET THE TEAM -->
+        <div class="meet-team">
+            <h2>MEET THE TEAM</h2>
+        </div>
+        <!-- END -->
+                
+    </main>
+    <!-- END MAIN-->
+    
+    <!-- START Contact-->
+        <footer>
+            <div class="contact">
+                <h2>Contact</h2>
+            </div>
+        </footer>
+    <!-- END -->
+
     
 </body>
 </html>
