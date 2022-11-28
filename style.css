@@ -1,0 +1,36 @@
+body {
+    background:  linear-gradient(#01adc1, #000000);;
+}
+
+main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.sidenav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 8px 0;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+}
+.CoolImg{
+    width: 500px;
+}
+
+.container-landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+iframe{
+    width: 300px;
+    height: auto;
+}
