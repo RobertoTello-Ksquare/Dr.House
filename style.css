@@ -10,7 +10,7 @@ body {
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     flex-direction: row;
     top: -200px;
     transition: top 0.2s;
