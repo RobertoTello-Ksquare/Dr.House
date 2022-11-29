@@ -41,7 +41,7 @@ body {
 
 .container-landing{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: 100vh;
     background-repeat: no-repeat;
@@ -58,18 +58,70 @@ body {
     align-items: center;
     background-image: url('src/calendar.png');
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
-    width: auto;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 5vh;
 }
+
+.tooltip .tooltiptext {
+    
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    
+  }
+  .tooltip{
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ff3535;
+
+  }
+  .tooltip:hover{
+    margin: transparent;
+    background-color: #ffffff;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    background-color: #01adc1;
+  }
+
+@media screen and (max-width: 900px) {
+    .container-landing{
+        align-items: flex-start;
+    }
+  }
+  
+
 .text-calendar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
 
+.text-calendar p{
+    margin: 0px;
+}
+.calendar-date{
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.calendar-hour{
+    font-size: xx-large;
+}
 
 iframe{
     width: 300px;
