@@ -2,12 +2,22 @@ body {
     display: flex;
     height:100%;
     background:  linear-gradient(#01adc1, #000000);
+    background-image: url('src/pas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: OldFont;
+    src: url('src/carolingia.ttf');
+}
+  
+
 .topnav{
     display: flex;
     position: fixed;
@@ -46,8 +56,16 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    background-image: url('src/A.png');
+    background-size: cover;
+    background-image: url('src/draw.jpg');
+}
+.timelime{
+    background-image: url('src/drawing-simple-background-minimalism-spiral-bones-spine-538587-wallhere.com.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
 }
 
 
@@ -56,12 +74,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('src/calendar.png');
+    /*background-image: url('src/calendar.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    
     height: 200px;
     width: 150px;
+    */
     margin-bottom: 5vh;
 }
 
@@ -81,15 +101,24 @@ body {
     
   }
   .tooltip{
-    border: transparent;
     border-radius: 10px;
-    padding: 5px;
-    background-color: #ff3535;
+    padding: 100px;
+    background-image: url('src/Second.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
 
+    font-family: OldFont;
+    font-size: 40px;
+  }
+  .tooltiptext{
+    font-size: 20px;
   }
   .tooltip:hover{
     margin: transparent;
-    background-color: #ffffff;
+    background-image: url('src/Third.png');
+
   }
 
 .tooltip:hover .tooltiptext {
@@ -104,6 +133,11 @@ body {
   }
   
 
+.text-calendar {
+    font-family: OldFont;
+    color: black;
+}
+
 .text-calendar{
     display: flex;
     flex-direction: column;
@@ -115,18 +149,14 @@ body {
     margin: 0px;
 }
 .calendar-date{
-    font-size: 30px;
+    font-size: 70px;
     font-weight: 900;
     padding-bottom: 10px;
 }
 .calendar-hour{
-    font-size: xx-large;
+    font-size: 70px;
 }
 
-iframe{
-    width: 300px;
-    height: auto;
-}
 
 .contact-container{
     display: flex;
@@ -175,15 +205,15 @@ iframe{
 
 .contact{
     padding: 20px;
-    border-color: #3498db;
+    border-color: #dbc234;
     color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    box-shadow: 0 0 40px 40px #dbc234 inset, 0 0 0 0 #dbc234;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;  
 }
 
 .contact:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    box-shadow: 0 0 10px 0 #dbc234 inset, 0 0 10px 4px #dbc234;
 }
 
 footer{
