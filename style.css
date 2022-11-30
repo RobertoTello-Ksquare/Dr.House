@@ -1,8 +1,7 @@
 body {
     display: flex;
     height:100%;
-    background:  linear-gradient(#01adc1, #000000);
-    background-image: url('src/pas.jpg');
+    background-image: url('src/texture.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -10,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 @font-face {
@@ -123,7 +123,7 @@ body {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-    background-color: #01adc1;
+    background-color: #91461e;
   }
 
 @media screen and (max-width: 900px) {
@@ -131,7 +131,11 @@ body {
         align-items: flex-start;
     }
   }
-  
+
+ #countdown{
+    font-family: OldFont;
+    font-size: 25px;
+  }
 
 .text-calendar {
     font-family: OldFont;
@@ -176,9 +180,8 @@ body {
        -moz-appearance: none;
             appearance: none;
     background-color: transparent;
-    border: 2px solid #e74c3c;
+    border: 2px solid;
     border-radius: 0.6em;
-    color: #e74c3c;
     cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
@@ -205,15 +208,15 @@ body {
 
 .contact{
     padding: 20px;
-    border-color: #dbc234;
+    border-color: #91461e;
     color: #fff;
-    box-shadow: 0 0 40px 40px #dbc234 inset, 0 0 0 0 #dbc234;
+    box-shadow: 0 0 40px 40px #91461e inset, 0 0 0 0 #91461e;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;  
 }
 
 .contact:hover {
-    box-shadow: 0 0 10px 0 #dbc234 inset, 0 0 10px 4px #dbc234;
+    box-shadow: 0 0 10px 0 #91461e inset, 0 0 10px 4px #91461e;
 }
 
 footer{
