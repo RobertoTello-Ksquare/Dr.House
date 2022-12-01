@@ -6,151 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. House</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="src/img/icon.png">
 </head>
 <style>
 
 </style>
-<body>
-    
 
+<body>
     <audio class="theme" autoplay muted="true">
         <source src="src/House MD  Theme Song.mp3" type="audio/mp3" >
     </audio>
+    
     <script src="./index.js"></script>
 
     <!-- START NAVBAR  -->
-    <nav class="topnav">
-            
-        <a class="active" href="#home">Home</a>
-        <a href="#events"> Events</a>
-        <a href="#team">Meet the team</a>
-        <a href="#contacts">Contacts</a>
-</nav>
+        <nav class="topnav">
+            <img src="src/img/logo.png" style="height: 25px;">
+            <a class="active" href="#home">Home</a>
+            <a href="#events"> Events</a>
+            <a href="#contact">Contact</a>
+            <a href="#meet-team">Meet the team</a>
+        </nav>
     <!-- END -->
     
     
 
     <!-- START MAIN-->
     <main>
-        <div class="container-landing">
-            <div class="container-calendar" >
-                <div class="text-calendar">
-                    <p class="calendar-date">12 Dec</p>
-                    <p class="calendar-hour">11h00</p>
-                    <button class="tooltip" onClick="window.location.href='https://goo.gl/maps/GzjE1MTQr58oQSKV6';" >Location
-                        <span class="tooltiptext">Los Angeles Convention Center </span>
-                    </button>
-                    <p id="countdown"></p>
+        <!-- START Landing-->
+            <div class="container-landing" id="home">
+                <div class="container-calendar" >
+                    <div class="text-calendar">
+                        <p class="calendar-date">12 Dec</p>
+                        <p class="calendar-hour">11h00</p>
+                        <button class="tooltip" onClick="window.location.href='https://goo.gl/maps/GzjE1MTQr58oQSKV6';" >
+                            <a>Location</a>
+                            <span class="tooltiptext">Los Angeles Convention Center </span>
+                        </button>
+                        <p id="countdown"></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        <!-- END -->
+
 
         <!-- EVENT SCHEDULE SECTION -->
-        <h1 class="event_title">Event Schedule</h1>
-        <div class="timelime">
-
-            <div class="container left-container">
-                <div class="text-box">
-                    <h1>11:00</h1>
-                    <h2>Opening time</h2>
-                    <span class="left-container-arrow"></span>
-                </div>
-            </div>
-    
-            <div class="container right-container">
-                <div class="text-box">
-                    <h1>12:00</h1>
-                    <h2>Q&A with the cast</h2>
-                    <span class="right-container-arrow"></span>
-                </div>
-            </div>
-    
-            <div class="container left-container">
-    
-                <div class="text-box">
-                    <h1>14:00</h1>
-                    <h2>Behind the scenes highlight</h2>
-                    <span class="left-container-arrow"></span>
-                </div>
-            </div>
-    
-            <div class="container right-container">
-                <div class="text-box">
-                    <h1>16:00</h1>
-                    <h2>Q&A with the creators of the show</h2>
-                    <span class="right-container-arrow"></span>
-                </div>
-            </div>
-    
-            <div class="container left-container">
-                <div class="text-box">
-                    <h1>17:00</h1>
-                    <h2>Reading table of never shown before material</h2>
-                    <span class="left-container-arrow"></span>
-                </div>
-            </div>
-    
-            <div class="container right-container">
-                <div class="text-box">
-                    <h1>18:00</h1>
-                    <h2>Closing ceremony</h2>
-                    <span class="right-container-arrow"></span>
-                </div>
-            </div>
-    
-        </div>
-        <!-- END -->
-        <!-- START MEET THE TEAM -->
-        <div class="meet-team">
-           
-                <div class="row">
-                    <div class="column">
-                      <div class="card">
-                        <img src="wilson.png" alt="Wilson" style="width:100%">
-                        <div class="container2">
-                            <p class="title">James Wilson</p>
-                            <h3>NBC Executive</h3>
+            <div id ="events">
+                <br>
+                <h1 class="event_title">Event Schedule</h1>
+                <div class="timelime" >
+                    <div class="container left-container">
+                        <div class="text-box">
+                            <h1>11:00</h1>
+                            <h2>Opening time</h2>
+                            <span class="left-container-arrow"></span>
                         </div>
-                      </div>
                     </div>
-                    <div class="row">
-                        <div class="column">
-                          <div class="card">
-                            <img src="house (3).png" alt="House" style="width:100%">
-                            <div class="container2">
-                                <p class="title">Gregory House</p>
-                                <h3>Event Manager</h3>
-                            </div>
-                          </div>
+            
+                    <div class="container right-container">
+                        <div class="text-box">
+                            <h1>12:00</h1>
+                            <h2>Q&A with the cast</h2>
+                            <span class="right-container-arrow"></span>
                         </div>
-                    <div class="row">
-                        <div class="column">
-                          <div class="card">
-                            <img src="lisa.png" alt="Lisa" style="width:100%">
-                            <div class="container2">
-                                <p class="title">Lisa Cuddy</p>
-                                <h3>Contact</h3>
-                            </div>
-                          </div>
+                    </div>
+            
+                    <div class="container left-container">
+            
+                        <div class="text-box">
+                            <h1>14:00</h1>
+                            <h2>Behind the scenes highlight</h2>
+                            <span class="left-container-arrow"></span>
                         </div>
-        </div>
+                    </div>
+            
+                    <div class="container right-container">
+                        <div class="text-box">
+                            <h1>16:00</h1>
+                            <h2>Q&A with the creators of the show</h2>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+            
+                    <div class="container left-container">
+                        <div class="text-box">
+                            <h1>17:00</h1>
+                            <h2>Reading table of never shown before material</h2>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+            
+                    <div class="container right-container">
+                        <div class="text-box">
+                            <h1>18:00</h1>
+                            <h2>Closing ceremony</h2>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        <!-- END -->
+
+        <!-- START Contact-->
+            <div class="contact-container" id="contact">
+                <h1> Do you want live the experience? </h1>
+
+                <h2> Let us contact you </h2>
+                
+                <button class="btn contact" onClick="window.open('https://sqdtlc57zny.typeform.com/to/xvEi5kaM');">
+                    Let's go
+                </button>
+            </div>
+        <!-- END -->
+
+
+        <!-- START MEET THE TEAM -->
+            <div class="meet-team" id="meet-team"> 
+                <div class="column">
+                <div class="card">  
+                    <img src="src/Team/wilson.png" alt="Wilson" style="width:100%">
+                    <div class="container2">
+                        <p class="titleName">James Wilson</p>
+                        <div class="container-pop" hidden>
+                            <ul>
+                                <li>James Wilson es el jefe del departamento de oncología del Hospital Princeton-Plainsboro y el único amigo de Gregory House.
+
+                                    Es el mejor y único amigo de House, por lo que solo él se atreve a hablarle con sinceridad y discutirle de tú a tú y además valora mucho la relación de amistad con él. 
+                            </ul>  
+                        </div>
+                        <h3>NBC Executive</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card">
+                    <img src="src/Team/Gregory House.png" alt="House" style="width:100%">
+                    <div class="container2">
+                        <p class="titleName">Gregory House</p>
+                        <div class="container-pop" hidden>
+                            <ul>
+                                <li>Gregory House es el personaje principal de la serie y se trata de un médico brillante, famoso por resolver casos médicos que los demás consideran complicados y algunas veces descrito como cascarrabias, dado a su peculiar forma de relacionarse con los demás.
+                            </ul>  
+                        </div>
+                        <h3>Event Manager</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card">
+                    <img src="src/Team/lisa.png" alt="Lisa" style="width:100%">
+                    <div class="container2">
+                        <p class="titleName">Lisa Cuddy</p>
+                        <div class="container-pop" hidden>
+                            <ul>
+                                <li>Dr. Lisa Cuddy was a major character on House for the first seven seasons. She was the Dean of Medicine and Chief Hospital Administrator of Princeton-Plainsboro Teaching Hospital from Season 1 to Season 7.
+                            </ul>  
+                        </div>
+                        <h3>Contact</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
         <!-- END -->
                 
     </main>
     <!-- END MAIN-->
     
-    <!-- START Contact-->
-        <div class="contact-container">
-            <h1> Contact us! </h1>
-            <button class="btn contact" onClick="window.open('https://sqdtlc57zny.typeform.com/to/xvEi5kaM');">
-               Let's go
-            </button>
-        </div>
-
-        <footer>
-            <p>Events by Carlos Reyes.</p>
-        </footer>
-    <!-- END -->
+    
 
     
 </body>
