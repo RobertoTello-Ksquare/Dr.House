@@ -49,6 +49,18 @@ html {
     color: black;
   }
 
+  .volume{
+    position: absolute;
+    right: 50px;
+  
+  }
+
+  .show_volume{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
 /*------------------- Landing Section CSS -------------------------*/
 
 .container-landing{

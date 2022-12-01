@@ -1,10 +1,21 @@
 //Music
 let theme = document.querySelector(".theme");
+let slider = document.querySelector(".volume_input");
+let volume_value = document.querySelector(".show_volume");
 theme.volume=0.3;
 document.body.addEventListener('mouseover', () => {
     theme.muted = false;
     theme.play();
 });
+
+
+
+slider.addEventListener('mousemove',()=>{
+  let vl = slider.value;
+  volume_value.innerHTML = vl;
+  theme.volume=vl/100;
+});
+
 
 //Navbar Scroll Function
 window.onscroll = function() {scrollFunction()};
