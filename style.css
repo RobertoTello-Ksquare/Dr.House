@@ -212,10 +212,8 @@ html {
 }
 
 .left-container:hover, .right-container:hover{
-    color: #3498db;
+    color: #91461e;
 }
-
-
 
 .container span{
     position: absolute;
@@ -286,6 +284,48 @@ html {
 }
 
 
+.E1{
+    background-image: url('src/Team/Gregory House.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.E2{
+    background-image: url('src/Team/Cameron.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.E3{
+    background-image: url('src/Team/wilson.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.E4{
+    background-image: url('src/Team/Foreman.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.E5{
+    background-image: url('src/Team/lisa.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.E6{
+    background-image: url('src/Team/Taub.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 /*------------------- Contact Us CSS -------------------------*/
 
 .contact-container{
@@ -351,6 +391,7 @@ html {
 .column:hover{
     box-shadow: 0 0 10px 0 #91461e inset, 0 0 10px 4px #91461e;
 }
+
 /* Control hidden text*/
 .column:hover .container-pop{
     display: flex;
@@ -396,4 +437,49 @@ html {
         text-align: centers;
         font-size: 30px;
     }
+    .column{
+        width: 100%;
+    }
+    .meet-team{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-container{
+        left: 0%;
+    }
+    
+    .right-container{
+        left: 0%;
+    }
+
+    .text-box{
+        padding: 0px 0px;
+        left: -30px;
+        width: 100%;
+        box-shadow: 10px 0 0 0 #91461e inset, 0 0 10px 4px #91461e;
+        font-size: 10px;
+
+    }
+
+    .E1, .E2, .E3, .E4, .E5, .E6{
+        background-size: 30%;
+    }
+
+
+
   }
