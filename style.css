@@ -1,7 +1,7 @@
 body {
     display: flex;
     height:100%;
-    background-image: url('src/texture.jpg');
+    background-image: url('src/Backgrounds/texture.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -9,15 +9,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+  
 @font-face {
     font-family: OldFont;
-    src: url('src/carolingia.ttf');
+    src: url('src/typography/carolingia.ttf');
 }
   
-
+/* ---------------Navbar CSS-----------------*/
 .topnav{
     z-index: 1;
     display: flex;
@@ -44,10 +48,8 @@ body {
     background-color: #ddd;
     color: black;
   }
-  .topnav a.active {
-    background-color: black;
-    color: white;
-  }
+
+/*------------------- Landing Section CSS -------------------------*/
 
 .container-landing{
     display: flex;
@@ -57,31 +59,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('src/draw.jpg');
+    background-image: url('src/Backgrounds/landing-b.jpg');
 }
-.timelime{
-    background-image: url('src/drawing-simple-background-minimalism-spiral-bones-spine-538587-wallhere.com.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-
-}
-
 
 .container-calendar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-image: url('src/calendar.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    height: 200px;
-    width: 150px;
-    */
     margin-bottom: 5vh;
 }
 
@@ -103,7 +88,7 @@ body {
   .tooltip{
     border-radius: 10px;
     padding: 100px;
-    background-image: url('src/Second.png');
+    background-image: url('src/Backgrounds/btn-back.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -117,19 +102,12 @@ body {
   }
   .tooltip:hover{
     margin: transparent;
-    background-image: url('src/Third.png');
-
+    background-image: url('src/Backgrounds/btn-back-change.png');
   }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
     background-color: #91461e;
-  }
-
-@media screen and (max-width: 900px) {
-    .container-landing{
-        align-items: flex-start;
-    }
   }
 
  #countdown{
@@ -161,74 +139,13 @@ body {
     font-size: 70px;
 }
 
-
-.contact-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
+/*------------------- Event CSS -------------------------*/
+.timelime{
+    background-image: url('src/Backgrounds/event-b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.contact h1{
-    padding: 20px;
-}
-
-.btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: transparent;
-    border: 2px solid;
-    border-radius: 0.6em;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-  }
-  .btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
-  }
-
-.contact{
-    padding: 20px;
-    border-color: #91461e;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #91461e inset, 0 0 0 0 #91461e;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;  
-}
-
-.contact:hover {
-    box-shadow: 0 0 10px 0 #91461e inset, 0 0 10px 4px #91461e;
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: aliceblue;
-}
-
-
-/*Event CSS*/
-
 .event_title{
     margin-bottom: -80px;
     text-align: center;
@@ -356,8 +273,6 @@ footer{
     right: -15px;
 }
 
-
-
 .right-container-arrow{
     height: 0;
     width: 0;
@@ -369,6 +284,94 @@ footer{
     border-right: 15px solid #ffff;
     left: -15px;
 }
+
+
+/*------------------- Contact Us CSS -------------------------*/
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contact-container h1{
+    font-size: 60px;
+}
+.contact h1{
+    padding: 20px;
+}
+
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+.contact{
+    padding: 20px;
+    border-color: #91461e;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #91461e inset, 0 0 0 0 #91461e;
+    transition: all 150ms ease-in-out;  
+}
+
+.contact:hover {
+    box-shadow: 0 0 10px 0 #91461e inset, 0 0 10px 4px #91461e;
+}
+
+
+/*------------------- MEET THE TEAM CSS -------------------------*/
+.meet-team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.column:hover{
+    box-shadow: 0 0 10px 0 #91461e inset, 0 0 10px 4px #91461e;
+}
+/* Control hidden text*/
+.column:hover .container-pop{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    visibility: visible;
+}
+.container-pop ul{
+    list-style: none;
+}
+
+.container2 {
+    padding: 0 16px;
+    background-color: #91461e;
+}
+
+.titleName {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
 .column {
     float: left;
     width: 30%;
@@ -379,12 +382,18 @@ footer{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container2 {
-    padding: 0 16px;
-    background-color: #91461e;
-}
+/* Responsive section*/
 
-.title {
-    color: rgb(255, 255, 255);
-    font-size: larger;
-}
+@media screen and (max-width: 900px) {
+    .container-landing{
+        align-items: flex-end;
+        background-position: left;
+    }
+    .tooltip{
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+        text-align: centers;
+        font-size: 30px;
+    }
+  }
