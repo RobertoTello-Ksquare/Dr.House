@@ -7,6 +7,7 @@ document.body.addEventListener('mouseover', () => {
     theme.play();
 });
 
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -19,17 +20,17 @@ function scrollFunction() {
 
 
 
-var end = new Date('12/12/2022 11:00 AM');
+let end = new Date('12/12/2022 11:00 AM');
 
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
+    let _second = 1000;
+    let _minute = _second * 60;
+    let _hour = _minute * 60;
+    let _day = _hour * 24;
+    let timer;
 
     function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
+        let now = new Date();
+        let distance = end - now;
         if (distance < 0) {
 
             clearInterval(timer);
@@ -37,10 +38,10 @@ var end = new Date('12/12/2022 11:00 AM');
 
             return;
         }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
+        let days = Math.floor(distance / _day);
+        let hours = Math.floor((distance % _day) / _hour);
+        let minutes = Math.floor((distance % _hour) / _minute);
+        let seconds = Math.floor((distance % _minute) / _second);
 
         document.querySelector('#countdown').innerHTML = days + ' days, ';
         document.querySelector('#countdown').innerHTML += hours + ' hours, ';
