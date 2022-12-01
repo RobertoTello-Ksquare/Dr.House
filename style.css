@@ -19,20 +19,21 @@ body {
   
 
 .topnav{
+    z-index: 1;
     display: flex;
     position: fixed;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    width: auto;
+    width: 100%;
     flex-direction: row;
     top: -200px;
     transition: top 0.2s;
-    background-color: rgb(1, 31, 43);
+    background-color: #91461e;
     
   }
   .topnav a {
     float: left;
-    color: #9a9b9c;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,10 +45,9 @@ body {
     color: black;
   }
   .topnav a.active {
-    background-color: #0060a8;
+    background-color: black;
     color: white;
   }
-
 
 .container-landing{
     display: flex;
@@ -368,4 +368,23 @@ footer{
     border-bottom: 15px solid transparent;
     border-right: 15px solid #ffff;
     left: -15px;
+}
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding:  8px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+    padding: 0 16px;
+    background-color: #91461e;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: larger;
 }
