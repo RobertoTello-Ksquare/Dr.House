@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -48,11 +49,11 @@ html {
     background-color: #ddd;
     color: black;
   }
+  /*volume*/
 
   .volume{
     position: absolute;
-    right: 50px;
-  
+    right: 20px;
   }
 
   .show_volume{
@@ -60,6 +61,41 @@ html {
     font-weight: 600;
     font-size: 20px;
   }
+
+  .icon-volume{
+    visibility: hidden;
+  }
+
+  input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
 
 /*------------------- Landing Section CSS -------------------------*/
 
@@ -392,6 +428,15 @@ html {
 
 
 /*------------------- MEET THE TEAM CSS -------------------------*/
+.section-mt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-mt h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
 .meet-team{
     display: flex;
     flex-direction: row;
@@ -492,6 +537,9 @@ html {
         background-size: 30%;
     }
 
-
-
+    .volume{
+        position: center;
+        margin-top: 25%;
+        right: 50px;
+      }
   }
