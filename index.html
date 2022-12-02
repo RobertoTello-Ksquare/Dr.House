@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. House</title>
     <link rel="stylesheet" href="style.css" />
+    <!--ICON-->
     <link rel="icon" href="src/img/icon.png">
 </head>
 <style>
@@ -13,10 +14,12 @@
 </style>
 
 <body>
+
+    <!-- START AUDIO-->
     <audio class="theme" autoplay muted="true">
         <source src="src/House MD  Theme Song.mp3" type="audio/mp3" >
     </audio>
-    
+    <!-- end-->
 
 
     <!-- START NAVBAR  -->
@@ -26,12 +29,10 @@
             <a href="#events"> Events</a>
             <a href="#contact">Contact</a>
             <a href="#meet-team">Meet the team</a>
-
-   
-            <div class="volume">
-                <input class="volume_input" type="range" min="0" max="100" value="30">
-                <span class="show_volume">30</span>
-            </div>
+                <div class="volume">
+                    <input class="volume_input" type="range" min="0" max="100" value="30">
+                    <span class="show_volume">30</span>
+                </div>
       
         </nav>
     <!-- END -->
@@ -45,7 +46,7 @@
                 <div class="container-calendar" >
                     <div class="text-calendar">
                         <p class="calendar-date">12 Dec</p>
-                        <p class="calendar-hour">11h00</p>
+                        <p class="calendar-hour">11h00 a.m.</p>
                         <button class="tooltip" onClick="window.open('https://goo.gl/maps/GzjE1MTQr58oQSKV6');"  >
                             <a>Location</a>
                             <span class="tooltiptext">Los Angeles Convention Center </span>
@@ -121,16 +122,15 @@
         <!-- END -->
 
         <!-- START MEET THE TEAM -->
-            <div class="meet-team" id="meet-team"> 
+        <div id="meet-team" class="section-mt">
+            <h1> Meet the team</h1>
+            <div class="meet-team" > 
                 <div class="column">
                 <div class="card">  
                     <img src="src/Team/wilson.png" alt="Wilson" style="width:100%">
                     <div class="container2">
-                        <p class="titleName">James Wilson</p>
                         <div class="container-pop" hidden>
-                            <ul>
-                                <li>James Wilson 
-                            </ul>  
+                            <p class="titleName">James Wilson</p>
                         </div>
                         <h3>NBC Executive</h3>
                     </div>
@@ -140,11 +140,8 @@
                 <div class="card">
                     <img src="src/Team/Gregory House.png" alt="House" style="width:100%">
                     <div class="container2">
-                        <p class="titleName">Gregory House</p>
                         <div class="container-pop" hidden>
-                            <ul>
-                                <li>Gregory House 
-                            </ul>  
+                            <p class="titleName">Gregory House</p>
                         </div>
                         <h3>Event Manager</h3>
                     </div>
@@ -154,26 +151,21 @@
                 <div class="card">
                     <img src="src/Team/lisa.png" alt="Lisa" style="width:100%">
                     <div class="container2">
-                        <p class="titleName">Lisa Cuddy</p>
                         <div class="container-pop" hidden>
-                            <ul>
-                                <li>Dr. Lisa 
-                            </ul>  
+                            <p class="titleName">Lisa Cuddy</p>
                         </div>
                         <h3>Contact</h3>
                     </div>
                 </div>
                 </div>
             </div>
+        </div>
+    
         <!-- END -->
                 
     </main>
     <!-- END MAIN-->
 
     <script src="./index.js"></script>
-    
-    
-
-    
 </body>
 </html>
