@@ -1,4 +1,11 @@
 # Dr.House
+Preview of the website:
+ - [Dr. House](https://robertotello-ksquare.github.io/Dr.House/)
+
+The VSCode editor is recommended and the documentation can be found in the following links:
+ - [Technical documentation](https://institutotksquare-my.sharepoint.com/:w:/g/personal/yumil_flores_itksquare_edu_mx/EYHBYMZI0QBDpk6xPcdO4ksBNpZfZ_W8nOnL1Qy0R9eLEw)
+ - [User manual](https://institutotksquare-my.sharepoint.com/:w:/g/personal/navidarito_chen_itksquare_edu_mx/EeGQhvXk-sFFos3lgsiWhfcBTnm9EmQ_cLYy8c9nK-chWw)
+
 
 ## USER STORIES:
 
